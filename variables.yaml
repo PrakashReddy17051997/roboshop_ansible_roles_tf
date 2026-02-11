@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.learndevopswithprakash.online
+REDIS_HOST: redis.learndevopswithprakash.online
+MYSQL_HOST: mysql.learndevopswithprakash.online
+RABBITMQ_HOST: rabbitmq.learndevopswithprakash.online
+CATALOGUE_HOST: catalogue.learndevopswithprakash.online
+USER_HOST: user.learndevopswithprakash.online
+CART_HOST: cart.learndevopswithprakash.online
+SHIPPING_HOST: shipping.learndevopswithprakash.online
+PAYMENT_HOST: payment.learndevopswithprakash.online
+DISPATCH_HOST: dispatch.learndevopswithprakash.online
