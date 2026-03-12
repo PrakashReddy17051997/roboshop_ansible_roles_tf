@@ -27,7 +27,7 @@
 
 - name: Download the Artifact
   ansible.builtin.get_url:
-    url: "{{Nexus_URL}}/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
+    url: "{{Nexus_URL}}/repository/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
     dest: /tmp
 
 
