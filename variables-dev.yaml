@@ -8,5 +8,5 @@ CART_HOST: cart.app-dev.learndevopswithprakash.online
 SHIPPING_HOST: shipping.app-dev.learndevopswithprakash.online
 PAYMENT_HOST: payment.app-dev.learndevopswithprakash.online
 DISPATCH_HOST: dispatch.app-dev.learndevopswithprakash.online
-Nexus_URL: http://172.31.22.41:8081 # need to be configured
+Nexus_URL: http://172.31.31.230:8081 # need to be configured
 group_id: "com/roboshop"
