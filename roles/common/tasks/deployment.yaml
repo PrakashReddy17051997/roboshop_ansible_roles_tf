@@ -40,7 +40,7 @@
   tags:
   - deployment
   ansible.builtin.unarchive:
-    src: "/tmp/{{component}}//{{app_version}}.zip"
+    src: "/tmp/{{component}}//-{{app_version}}.zip"
     dest: /app
     remote_src: yes
   when: component == "catalogue"
