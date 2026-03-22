@@ -23,9 +23,19 @@
   tags:
   - deployment
   ansible.builtin.get_url:
+    url: "{{Nexus_URL}}/repository/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
+    dest: /tmp
+  when: component == "catalogue"
+  
+- name: "download {{component}} application"
+  tags:
+  - deployment
+  ansible.builtin.get_url:
     url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
     dest: /tmp
-
+  when: component != "catalogue"
+# - name: Download the Artifact
+#   
 - name: "extract {{component}} application"
   tags:
   - deployment
@@ -42,8 +52,8 @@
     chdir: /app
 
 - name: "restart {{component}}"
-  tags:
-  - deployment
+  # tags:
+  # - deployment
   ansible.builtin.service:
     name: "{{component}}"
     state: restarted
