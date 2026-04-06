@@ -7,7 +7,8 @@
     name: nodejs
     state: present
 
-- name: npm instal dependencies 
-  ansible.builtin.command: npm install
-  args:
-    chdir: /app
+#Installed by CI/CD
+# - name: npm instal dependencies 
+#   ansible.builtin.command: npm install
+#   args:
+#     chdir: /app
